@@ -4,8 +4,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/*https://www.googleapis.com/books/v1/volumes?q=Harry%20Potter*/
-
 public class Main extends Application {
 
     @Override
