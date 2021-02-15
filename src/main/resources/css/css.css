@@ -1,0 +1,19 @@
+.background {
+    -fx-background-color:rgba(54, 54, 54);
+}
+
+.backgroundTextView {
+    -fx-background-color:rgba(0, 0, 0);
+}
+
+.myTree {
+   -fx-font-family: "Ubuntu";
+   -fx-font: 15px Ubuntu;
+   -fx-stroke: #eeeeee;
+   -fx-background-color: #0a0a0a;
+   -fx-text-fill: #ffffff;
+}
+
+.search_bar{
+   -fx-font: 14px Ubuntu;
+}
