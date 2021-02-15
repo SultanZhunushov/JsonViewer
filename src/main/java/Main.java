@@ -6,9 +6,6 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    /*https://www.googleapis.com/books/v1/volumes?q=Harry%20Potter*/
-
-
     @Override
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
