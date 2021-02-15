@@ -39,15 +39,13 @@ public class Controller {
 
     @FXML
     void initialize() {
-        search_bar.setStyle("");
     }
 
     @FXML
     void buttonClicked() {
         try {
-            String urlToDecode = URLDecoder.decode(search_bar.getText(), "UTF-8");
-            URL url = new URL(urlToDecode);
-            URI uri = new URI(url.getProtocol(), url.getUserInfo(), url.getHost(), url.getPort(), url.getPath(), url.getQuery(), url.getRef());
+            URL url = new URL(search_bar.getText());
+            URI uri = new URI(url.getProtocol(), url.getUserInfo(), url.getHost(), url.getPort(), url.getPath(), url.getQuery(), null);
             JsonElement root = JsonParser.parseString(getJsonFromResponse(uri.toASCIIString()));
             treeView.setRoot(parseJSON("json", root));
         } catch (IOException | URISyntaxException e) {
